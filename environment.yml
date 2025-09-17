@@ -1,0 +1,17 @@
+name: rl
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.11
+  - black==25.1.0
+  - isort==6.0.1
+  - mypy==1.11.2
+  - ruff==0.11.4
+  - pytest==8.3.5
+  - tensorboard==2.19.0
+  - pip:
+      - gymnasium==1.0.0
+      - minihack==1.0.0
+      - pygame==2.6.1
+      - stable_baselines3[extra]==2.6.0

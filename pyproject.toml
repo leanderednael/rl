@@ -1,0 +1,24 @@
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+exclude = ".venv/"
+explicit_package_bases = true
+ignore_missing_imports = true
+namespace_packages = true
+
+[tool.pytest.ini_options]
+pythonpath = "."
+
+[tool.coverage.run]
+omit = ["*/main.py", "*/__init__.py", "*/__main__.py", "*/tests/*", "*/test_*", "*/conftest*"]
+source = ["src/"]
+
+[tool.ruff.lint]
+ignore = []
+
+[tool.ruff.lint.per-file-ignores]
+"{src}/**/{__init__.py}" = ["F401"]
